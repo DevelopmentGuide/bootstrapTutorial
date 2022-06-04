@@ -10,31 +10,35 @@ p{
     font-size: 20px;
 }
 
-
-#cmprtmt0{
-    border: 1px solid black;
-    border-radius: 20px;
-    margin-bottom: 5px;
+.fixed-top{
+    margin-top: 110px;
 }
 
-#cmprtmt1{
+.cmprtmt0{
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 300px;
+}
+
+.cmprtmt1{
     margin-top: 50px;
     border-radius: 10px;
 }
 
-#cmprtmt2{
+.cmprtmt2{
     cursor: pointer;
     transition: 0.3s;
     margin-top: 50px;
     border-radius: 10px;
 }
-#cmprtmt2:hover{
+.cmprtmt2:hover{
     box-shadow: var(--customShadow);
     transform: scale(1);
     transition: 0.3s;
 }
 
-#cmprtmt3{
+.cmprtmt3{
+    z-index: 1;
     position: fixed;
     top: 0%;
     background-color: rgba(169, 202, 240, 0.4);
@@ -46,7 +50,7 @@ p{
     justify-content: space-between;
 }
 
-#cmprtmt4{
+.cmprtmt4{
     margin: 20px;
     margin-top: 150px;
 }
