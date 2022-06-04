@@ -3,7 +3,7 @@
 }
 
 html{
-    margin: 10px;
+    margin: 0px;
 }
 
 p{
@@ -14,7 +14,7 @@ p{
 #cmprtmt0{
     border: 1px solid black;
     border-radius: 20px;
-    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #cmprtmt1{
@@ -23,7 +23,7 @@ p{
 }
 
 #cmprtmt2{
-    cursor: cell;
+    cursor: pointer;
     transition: 0.3s;
     margin-top: 50px;
     border-radius: 10px;
@@ -32,4 +32,21 @@ p{
     box-shadow: var(--customShadow);
     transform: scale(1);
     transition: 0.3s;
+}
+
+#cmprtmt3{
+    position: fixed;
+    top: 0%;
+    background-color: rgba(169, 202, 240, 0.4);
+    width: 100%;
+    margin: 0px;
+    padding: 30px;
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: space-between;
+}
+
+#cmprtmt4{
+    margin: 20px;
+    margin-top: 150px;
 }
