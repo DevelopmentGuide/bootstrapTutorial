@@ -10,18 +10,18 @@ p{
     font-size: 20px;
 }
 
-.fixed-top{
+/* .fixed-top{
     margin-top: 110px;
-}
+} */
 
 .cmprtmt0{
     border: 1px solid black;
     border-radius: 20px;
+    padding-top: 40px;
     margin-bottom: 300px;
 }
 
 .cmprtmt1{
-    margin-top: 50px;
     border-radius: 10px;
 }
 
