@@ -25,17 +25,6 @@ p{
     border-radius: 10px;
 }
 
-.cmprtmt2{
-    cursor: pointer;
-    transition: 0.3s;
-    margin-top: 50px;
-    border-radius: 10px;
-}
-.cmprtmt2:hover{
-    box-shadow: var(--customShadow);
-    transform: scale(1);
-    transition: 0.3s;
-}
 
 .cmprtmt3{
     z-index: 1;
@@ -53,4 +42,9 @@ p{
 .cmprtmt4{
     margin: 20px;
     margin-top: 150px;
+}
+
+.buttonSep{
+    margin: 20px;
+    margin-top: 40px;
 }

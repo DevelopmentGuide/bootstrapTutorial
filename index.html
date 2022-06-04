@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Tutorial</title>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/76637730?v=4" type="image/gif" sizes="16x16" style="border-radius: 50%;">
     <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="https://app.staticsave.com/root/root.css">
     <link rel="stylesheet" href="https://app.staticsave.com/root/noselect.css">
@@ -16,13 +17,17 @@
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="500" class="noSelect">
 
   <nav class="navbar navbar-expand-sm bg-light fixed-top">
-    <div class="container-fluid">
+    <div class="container-fluid justify-content-start">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a href="#section1">
-            <img src="https://avatars.githubusercontent.com/u/76637730?v=4" draggable="false" width="50" style="border-radius:50%; filter: brightness(1.2);"/>
-          </a>
+        <a href="#section1">
+          <img src="https://avatars.githubusercontent.com/u/76637730?v=4" draggable="false" width="50" style="border-radius:50%; filter: brightness(1.2);"/>
+        </a>
         </li>
+      </ul>
+    </div>
+    <div class="container-fluid justify-content-end">
+      <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="#section1">Container</a>
         </li>
@@ -33,7 +38,7 @@
           <a class="nav-link" href="#section3">kbd</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section4">Text-Types</a>
+          <a class="nav-link" href="#section4">Text</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#section5">Tables</a>
@@ -85,23 +90,81 @@
     <!-- Container -->
     <div id="section1" class="cmprtmt0">
       <h3 class="fw-bolder my-5">Container</h3>
-        <div class="cmprtmt2 container p-5 bg-primary text-white rounded w-75">
-        <p>container p-5 my-5 bg-primary text-white rounded</p>
+      <div class="container p-5 bg-primary text-white rounded w-75">
+      <p>container p-5 my-5 bg-primary text-white rounded</p>
+      </div>
+      
+      <section class="buttonSep">
+        <button type="button" class="btn btn-outline-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal1">
+          Copy Code
+        </button>
+        <!-- The Modal -->
+        <div class="modal fade" tabindex="-1" id="myModal1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">container</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><div class="container p-5 bg-primary text-white rounded w-75">
+                  <p>container p-5 my-5 bg-primary text-white rounded</p>
+                  </div></p>
+              </div>
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                <button onclick="container()" type="button" class="btn btn-primary" data-bs-dismiss="modal">Copy Class</button>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
     </div>
 
 
-    <!-- Colomn -->
+    <!-- Column -->
     <div id="section2" class="cmprtmt0 text-center">
-        <h3 class="fw-bolder my-5">Colomn</h3>
-        <div class="cmprtmt2 col-sm-4 bg-primary text-white rounded">
-        .col-sm-3
+      <h3 class="fw-bolder my-5">Column</h3>
+      <div class="col-sm-4 bg-primary text-white rounded">
+      .col-sm-4
+      </div>
+      
+      <section class="buttonSep">
+        <button type="button" class="btn btn-outline-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal2">
+          Copy Code
+        </button>
+        <!-- The Modal -->
+        <div class="modal fade" tabindex="-1" id="myModal2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">column</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><div class="col-sm-4 bg-primary text-white rounded">
+                  .col-sm-4
+                  </div></p>
+              </div>
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                <button onclick="col()" type="button" class="btn btn-primary" data-bs-dismiss="modal">Copy Class</button>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
     </div>
 
 
     <!--
-        <div class="cmprtmt2 row">
+        <div class="cmprtmt1 row">
             <h3 class="fw-bolder my-5">kbd</h3>
         <div class="col-sm-2 bg-primary text-white rounded">.col-sm-3</div>
         <div class="col-sm-3 bg-dark text-white rounded-pill">.col-sm-3</div>
@@ -110,11 +173,39 @@
 
 
     <!-- kbd -->
-    <div id="section3" class="cmprtmt0">
-        <div class="cmprtmt1 text-center">
-            <h3 class="fw-bolder my-5">kbd</h3>
-            <p>Highlighted text by <kbd class="cmprtmt2" onclick="kbd()">kbd</kbd></p>
+    <div id="section3" class="cmprtmt0 text-center">
+      <div class="cmprtmt1 text-center">
+          <h3 class="fw-bolder my-5">kbd</h3>
+          <p>Highlighted text by <kbd>kbd</kbd></p>
+      </div>
+
+      <section class="buttonSep">
+        <button type="button" class="btn btn-outline-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal3">
+          Copy Code
+        </button>
+
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal3">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">kbd</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><kbd>SampleText</kbd></p>
+              </div>
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                <button onclick="kbd()" type="button" class="btn btn-primary" data-bs-dismiss="modal">Copy</button>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
     </div>
 
 
@@ -122,15 +213,52 @@
     <div id="section4" class="cmprtmt0">
         <div class="cmprtmt1 text-center">
             <h3 class="fw-bolder my-5">Text-Types</h3>
-            <p class="text-muted">text-muted.</p>
             <p class="text-primary">text-primary.</p>
             <p class="text-success">text-success.</p>
-            <p class="text-info">text-info.</p>
             <p class="text-warning">text-warning.</p>
-            <p class="text-danger">text-danger.</p>
             <p class="bg-dark text-white">bg-dark text-white.</p>
             <p class="text-white-50 bg-dark">text-white-50 bg-dark</p>
         </div>
+
+        <section class="buttonSep">
+          <button type="button" class="btn btn-outline-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal4">
+            Copy Code
+          </button>
+          <!-- The Modal -->
+          <div class="modal fade" tabindex="-1" id="myModal4">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">text-types</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p class="text-primary float-start">text-primary.</p>
+                  <button onclick="textPrimary()" type="button" class="btn btn-primary float-end" data-bs-dismiss="modal">Copy Class</button><br><br>
+
+                  <p class="text-success float-start">text-success.</p>
+                  <button onclick="textSuccess()" type="button" class="btn btn-primary float-end" data-bs-dismiss="modal">Copy Class</button><br><br>
+
+                  <p class="text-warning float-start">text-warning.</p>
+                  <button onclick="textWarning()" type="button" class="btn btn-primary float-end" data-bs-dismiss="modal">Copy Class</button><br><br>
+
+                  <p class="bg-dark text-white float-start">bg-dark text-white.</p>
+                  <button onclick="bgDark()" type="button" class="btn btn-primary float-end" data-bs-dismiss="modal">Copy Class</button><br><br>
+
+                  <p class="text-white-50 bg-dark float-start">text-white-50 bg-dark</p>
+                  <button onclick="textWhite()" type="button" class="btn btn-primary float-end" data-bs-dismiss="modal">Copy Class</button><br><br>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
     </div>
 
 
@@ -139,32 +267,90 @@
         <div class="cmprtmt1 text-center">
             <h3 class="fw-bolder my-5">Tables</h3>
             <table class="table table-striped table-hover">
-                <thead>
-                  <tr class="table-dark">
-                    <th>Firstname</th>
-                    <th>Lastname</th>
-                    <th>Email</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="table-warning">
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
-                  </tr>
-                  <tr class="table-info">
-                    <td>Mary</td>
-                    <td>Moe</td>
-                    <td>mary@example.com</td>
-                  </tr>
-                  <tr class="table-warning">
-                    <td>July</td>
-                    <td>Dooley</td>
-                    <td>july@example.com</td>
-                  </tr>
-                </tbody>
-              </table>
+              <thead>
+                <tr class="table-dark">
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-warning">
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+                </tr>
+                <tr class="table-info">
+                  <td>Mary</td>
+                  <td>Moe</td>
+                  <td>mary@example.com</td>
+                </tr>
+                <tr class="table-warning">
+                  <td>July</td>
+                  <td>Dooley</td>
+                  <td>july@example.com</td>
+                </tr>
+              </tbody>
+            </table>
         </div>
+
+        <section class="buttonSep">
+          <button type="button" class="btn btn-outline-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal5">
+            Copy Code
+          </button>
+          <!-- The Modal -->
+          <div class="modal fade" tabindex="-1" id="myModal5">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">tables</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <td><button onclick="tableHover()" type="button" class="btn btn-primary" data-bs-dismiss="modal">Copy Table Class</button></td>
+
+                  <table class="table table-striped table-hover">
+                    <thead>
+                      <tr class="table-dark">
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                        <td><button onclick="tableDark()" type="button" class="btn btn-primary" data-bs-dismiss="modal">Copy Class</button></td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="table-warning">
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                        <td><button onclick="tableWarning()" type="button" class="btn btn-primary" data-bs-dismiss="modal">Copy Class</button></td>
+                      </tr>
+                      <tr class="table-info">
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                        <td><button onclick="tableInfo()" type="button" class="btn btn-primary" data-bs-dismiss="modal">Copy Class</button></td>
+                      </tr>
+                      <tr class="table-warning">
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                        <td><button onclick="tableWarning()" type="button" class="btn btn-primary" data-bs-dismiss="modal">Copy Class</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                      </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
     </div>
 
 
@@ -227,13 +413,50 @@
       <div class="cmprtmt1 text-center">
         <h3 class="fw-bolder my-5">Alerts</h3>
         <div class="alert alert-success">
-          <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+          <strong>alert alert-success</strong>
         </div>
         <div class="alert alert-success alert-dismissible fade show">
           <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-          <strong>Info!</strong> alert-dismissible.
+          <strong>alert alert-success alert-dismissible fade show</strong>
         </div>
       </div>
+
+      <section class="buttonSep">
+        <button type="button" class="btn btn-outline-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal7">
+          Copy Code
+        </button>
+
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal7">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">alerts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                <div class="alert alert-success float-start">
+                  <strong>alert alert-success</strong>
+                </div>
+                <button onclick="alertSuccess()" type="button" class="btn btn-primary float-end" data-bs-dismiss="modal">Copy</button>
+
+                <div class="alert alert-success alert-dismissible fade show float-start">
+                  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                  <strong>alert alert-success alert-dismissible fade</strong>
+                </div>
+                <button onclick="dismissible()" type="button" class="btn btn-primary float-end" data-bs-dismiss="modal">Copy</button>
+              </div>
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
 
 
@@ -260,8 +483,45 @@
             </div>
           </div>
         </div>
-
       </div>
+
+      <section class="buttonSep">
+        <button type="button" class="btn btn-outline-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal8">
+          Copy Code
+        </button>
+
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal8">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">alerts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                <button onclick="btnWarning()" data-bs-dismiss="modal" type="button" class="btn btn-outline-warning">Warning</button>
+
+                <button onclick="btnDanger()" data-bs-dismiss="modal" type="button" class="btn btn-danger">Danger</button>
+
+                <button onclick="disabled()" data-bs-dismiss="modal" type="button" class="btn btn-primary">Disabled Primary</button>
+
+                <button onclick="Loading()" data-bs-dismiss="modal" class="btn btn-primary">
+                  <span class="spinner-border spinner-border-sm"></span>
+                  LoadingSpan
+                </button>
+
+              </div>
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
 
 
