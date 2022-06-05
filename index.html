@@ -87,6 +87,7 @@
   </nav>
 
   <div class="cmprtmt4 text-center">
+    
     <!-- Container -->
     <div id="section1" class="cmprtmt0">
       <h3 class="fw-bolder my-5">Container</h3>
@@ -735,21 +736,97 @@
     </div>
 
 
-
-    <div class="cmprtmt0">
+    <!-- canvas -->
+    <div id="section16" class="cmprtmt0">
       <div class="cmprtmt1 text-center">
-        <h3 class="fw-bolder my-5"> Bar</h3>
-
-          
-      
+        <h3 class="fw-bolder my-5">offcanvas</h3>
+        
+        <div class="offcanvas offcanvas-end" id="sideSection">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title">offcanvas</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>offcanvas offcanvas-end</p>
+            <p>offcanvas-header</p>
+            <button class="btn btn-danger" data-bs-dismiss="offcanvas" type="button">Close</button>
+          </div>
+        </div>
+    
+        <div class="container-fluid mt-3">
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideSection">
+            Toggle Right Offcanvas
+          </button>
+        </div>
       </div>
     </div>
 
 
+    <!-- form -->
+    <div id="section17" class="cmprtmt0">
+      <div class="cmprtmt1 ">
+        <h3 class="fw-bolder text-center my-5"> form</h3>
+      
+        <input type="color" class="form-control form-control-color h-25 mx-auto my-3" id="myColor" value="#CCCCCC" title="Choose a color"><hr>
+        <form>
+          <select class="form-select w-25 mx-auto my-3">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+         </form><hr>
 
-    <div class="cmprtmt0">
-      <div class="cmprtmt1 text-center">
-        <h3 class="fw-bolder my-5"> Bar</h3>
+        <form action="/action_page.php">
+          <div class="form-check w-25 mx-auto">
+            <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+            <label class="form-check-label" for="check1">Option 1</label>
+          </div>
+          <div class="form-check w-25 mx-auto">
+            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+            <label class="form-check-label" for="check2">Option 2</label>
+          </div>
+          <div class="form-check w-25 mx-auto">
+            <input type="checkbox" class="form-check-input" disabled>
+            <label class="form-check-label">Option 3</label>
+          </div><hr>
+
+          <div class="form-check w-25 mx-auto">
+            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option2">
+            <label class="form-check-label" for="radio1">Option a</label>
+          </div>
+          <div class="form-check w-25 mx-auto">
+            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+            <label class="form-check-label" for="radio2">Option b</label>
+          </div><hr>
+
+          <div class="form-check form-switch w-25 mx-auto">
+            <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+            <label class="form-check-label" for="mySwitch">Dark Mode</label>
+          </div><hr>
+        </form>
+
+        <form action="/action_page.php" class="was-validated">
+          <div class="mb-3 mt-3 w-25 mx-auto">
+            <label for="uname" class="form-label">Username:</label>
+            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div class="mb-3 w-25 mx-auto">
+            <label for="pwd" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div class="form-check mb-3 w-25 mx-auto">
+            <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+            <label class="form-check-label" for="myCheck">I agree on blabla.</label>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Check this checkbox to continue.</div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
         
       </div>
     </div>
