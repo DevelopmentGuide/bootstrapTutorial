@@ -6,6 +6,20 @@ html{
     margin: 0px;
 }
 
+#customNav{
+    background-color: rgba(234, 249, 255, 0.6) !important;
+    backdrop-filter: blur(5px) !important;
+}
+
+.active{
+    background-color: rgb(177, 233, 255);
+    border-radius: 20px;
+}
+
+#hrtLogo{
+    box-shadow: var(--shadowsmall);
+}
+
 p{
     font-size: 20px;
 }
